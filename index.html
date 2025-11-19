@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Rengavilas Tea & Coffee Bar</title>
+
+    <!-- REQUIRED model-viewer script
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .fade-wrapper {
+            opacity: 0;
+            animation: fadeInPage 1.5s ease-in-out forwards;
+        }
+
+
+        @keyframes fadeInPage {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .na {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            background-color: gold;
+            opacity: 0.9;
+
+            padding: 1px 40px;
+            width: fit-content;
+            margin: 20px auto;
+            border-radius: 50px;
+
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+
+
+        }
+
+
+        a {
+            justify-content: center;
+            color: black;
+            text-decoration: none;
+            font-size: xx-large;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition:
+                background-color 0.4s ease,
+                padding 0.4s ease,
+                border-radius 0.4s ease;
+        }
+
+        a:hover {
+            background-color: goldenrod;
+            padding: 12px 50px;
+            /* expands smoothly */
+            border-radius: 100px;
+
+            background-color: white;
+            padding: 12px 50px;
+            border-radius: 100px;
+            box-shadow: 0 0 12px white;
+
+        }
+
+
+        p {
+            display: flex;
+            color: ghostwhite;
+            font-size: x-large;
+            font-style: italic;
+            justify-content: left;
+            padding-top: 40px;
+            width: 1600px;
+            line-height: 2.5rem;
+        }
+
+
+        .intro {
+            margin: 50px;
+            display: flex;
+
+        }
+
+        .scroller-wrap {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 60px;
+        }
+
+        .scroll-track {
+            display: flex;
+            width: max-content;
+            animation: scroll 25s linear infinite;
+        }
+
+        .scroll-track img {
+            width: 350px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: goldenrod 12px 20px;
+            margin-right: 20px;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .map-container {
+            background-color: goldenrod;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 40px;
+            width: fit-content;
+            margin: 20px auto;
+            border-radius: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .na {
+                flex-direction: row;
+                gap: 1rem;
+                padding: 10px 20px;
+                width: 90%;
+                position: relative;
+
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 999;
+            }
+
+            a {
+                font-size: large;
+                padding: 10px 20px;
+            }
+
+            .intro {
+                flex-direction: column;
+                margin: 20px;
+                text-align: center;
+            }
+
+            p {
+                width: 100%;
+                font-size: large;
+                line-height: 2rem;
+            }
+
+            video {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+        }
+
+        /* Make image scroller responsive */
+        @media (max-width: 768px) {
+            .scroll-track img {
+                width: 200px;
+                height: 180px;
+            }
+        }
+
+        /* Responsive for very small screens */
+        @media (max-width: 480px) {
+            a {
+                font-size: medium;
+                padding: 8px 15px;
+            }
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .scroll-track img {
+                width: 150px;
+                height: 140px;
+            }
+
+            .map-container {
+                width: 90% !important;
+                padding: 15px !important;
+            }
+
+            iframe {
+                width: 100% !important;
+                height: 300px !important;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="na">
+        <a href="#top" class="scroll">Home</a>
+        <a href="/about.html">About</a>
+        <a href="Home">Contact</a>
+    </div>
+    <div class="fade-wrapper">
+
+    <div class="intro">
+        <p>
+            Sri Rengavilas Tea & Coffee Bar is a charming café located in the heart of the city,
+            known for its cozy ambiance and delightful beverages. Established in 1995,
+            it has become a favorite spot for locals and tourists alike to unwind and enjoy a cup of expertly brewed tea
+            or coffee. The café prides itself on using high-quality ingredients and traditional brewing methods to
+            create a memorable experience for its patrons.
+            Whether you're looking for a quiet place to read a book or catch up with friends, Sri Rengavilas Tea &
+            Coffee Bar offers the perfect setting.
+        </p>
+        <!-- put this where you want the video -->
+        <video autoplay muted loop src="daaw.webm" aria-hidden="true"></video>
+
+
+
+        <!--  <img src="daa.jpg" alt="Tea and Coffee" style="width:800px; height:500px; margin-left: 50px; border-radius: 20px;">
+        <model-viewer src="dab.glb" auto-rotate style="width: 100%; height: 600px;">
+        </model-viewer> -->
+    </div>
+    <h1 style="color: white; padding: 1px 20px; background-color:goldenrod; width: fit-content; border-radius: 20px;">
+        Items available</h1>
+    <div class="scroller-wrap">
+        <div class="scroll-track">
+            <img src="vada1.jpg">
+            <img src="vada2.jpg">
+            <img src="vada3.jpg">
+            <img src="vada4.jpg">
+            <img src="snacks.jpg">
+
+
+            <img src="vada1.jpg">
+            <img src="vada2.jpg">
+            <img src="vada3.jpg">
+            <img src="vada4.jpg">
+            <img src="snacks.jpg">
+        </div>
+
+        <br>
+        <br>
+        <div class="map-container">
+            <h2 style="color:white; ">Location</h2>
+            <iframe src="https://maps.google.com/maps?q=9.823806,77.987139&z=17&output=embed">
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</body>
+
+</html>
