@@ -219,6 +219,48 @@
         html {
             scroll-behavior: smooth;
         }
+       /* Glassy Gold Footer */
+footer {
+    background: rgba(255, 215, 0, 0.15); /* transparent gold */
+    backdrop-filter: blur(12px); /* glass effect */
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 2px solid rgba(255, 215, 0, 0.6);
+    box-shadow: 0 -5px 25px rgba(255, 215, 0, 0.4);
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: gold;
+    font-size: large;
+    border-radius: 25px 25px 0 0;
+}
+
+footer h2 {
+    margin: 0;
+    padding-bottom: 12px;
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+footer p {
+    margin: 8px 0;
+    color: rgb(255, 241, 181);
+}
+
+footer a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 18px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    background: rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 10px gold;
+}
+
     </style>
 
 </head>
@@ -278,6 +320,17 @@
         </div>
 
     </div>
+
+<footer>
+    <h2>Sri Rengavilas Tea & Coffee Bar</h2>
+    <p>Taste the Tradition • Since 1995</p>
+    <div style="margin: 18px 0;">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#top">Back to Top</a>
+    </div>
+    <p style="font-size: medium;">© 2025 Sri Rengavilas Tea & Coffee Bar. All rights reserved.</p>
+</footer>
 </body>
 
 
