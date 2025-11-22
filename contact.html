@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Sri Rengavilas Tea & Coffee Bar</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fade-in animation */
+        .fade-wrapper {
+            opacity: 0;
+            animation: fadeInPage 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeInPage {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navbar */
+        .na {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            background-color: gold;
+            opacity: 0.9;
+
+            padding: 1px 40px;
+            width: fit-content;
+            margin: 20px auto;
+            border-radius: 50px;
+
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+
+            color: gold;
+            box-shadow: 0 0 20px gold;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: xx-large;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: background-color 0.4s ease, padding 0.4s ease, border-radius 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        a:hover {
+            background-color: white;
+            padding: 12px 50px;
+            border-radius: 100px;
+            box-shadow: 0 0 12px white;
+        }
+
+        /* Contact info box */
+        .contact-box {
+            margin-top: 150px;
+            background-color: goldenrod;
+            backdrop-filter: blur(20px);
+            width: 600px;
+            padding: 30px;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px gold;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 22px;
+            color: black;
+            line-height: 2rem;
+        }
+
+        .info b {
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .contact-box {
+                width: 90%;
+            }
+
+            a {
+                font-size: large;
+                padding: 10px 20px;
+            }
+
+            .info {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="na">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="fade-wrapper">
+        <!-- Contact Details -->
+        <div class="contact-box">
+            <h1>Contact Us</h1>
+
+            <div class="info">
+                <p><b>Shop Name:</b> Sri Rengavilas Tea & Coffee Bar</p>
+                <p><b>Owner:</b> Rajavel</p>
+                <p><b>Phone:</b> +91 XXXXX XXXXX</p>
+                <p><b>Email:</b> SriRengavilasCoffeeBar@gmail.com</p>
+                <p><b>Address:</b><br>
+                    Your Shop Full Address,<br>
+                    City, State – Pincode
+                </p>
+                <p><b>Working Hours:</b><br>
+                    6:00 AM – 10:00 PM (Everyday)
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
