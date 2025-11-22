@@ -39,9 +39,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            background: rgba(0, 0, 0, 0.65);
             backdrop-filter: blur(8px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
             z-index: 1000;
         }
 
@@ -51,22 +49,47 @@
             letter-spacing: 1px;
         }
 
-        .navbar a {
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 8px 18px;
-            border: 1px solid var(--gold);
-            border-radius: 30px;
-            transition: 0.3s ease;
+         /* Navbar */
+        .na {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            background-color: gold;
+            opacity: 0.9;
+
+            padding: 1px 40px;
+            width: fit-content;
+            margin: 20px auto;
+            border-radius: 50px;
+
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1100;
+
+            color: gold;
+            box-shadow: 0 0 20px gold;
         }
 
-        .navbar a:hover {
-            background: var(--gold);
-            color: #000;
-            box-shadow: 0 0 12px var(--gold);
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: xx-large;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: background-color 0.4s ease, padding 0.4s ease, border-radius 0.4s ease, box-shadow 0.4s ease;
         }
+
+        a:hover {
+            background-color: white;
+            padding: 12px 50px;
+            border-radius: 100px;
+            box-shadow: 0 0 12px white;
+        }
+
 
         /* PAGE CONTAINER */
         .container {
@@ -163,7 +186,11 @@
     <!-- NAVBAR -->
     <div class="navbar">
         <h1>Sri Rengavilas Tea & Coffee Bar</h1>
+    </div>
+    <div class="na">
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <!-- MAIN CONTENT -->
